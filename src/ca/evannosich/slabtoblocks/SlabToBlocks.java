@@ -5,6 +5,7 @@ import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,34 +14,72 @@ public class SlabToBlocks extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		// Oak Planks
-		ItemStack oakPlanksItem = new ItemStack(Material.OAK_PLANKS);
 		
-		ItemMeta oakPlanksMeta = oakPlanksItem.getItemMeta();
+		ItemStack oakPlanksItem = new ItemStack(Material.OAK_PLANKS);
 		
 		NamespacedKey oakPlanksKey = new NamespacedKey(this, "OAK_PLANKS");
 		
-		ShapedRecipe oakPlanksRecipe = new ShapedRecipe(oakPlanksKey, oakPlanksItem);
+		ShapelessRecipe oakPlanksRecipe = new ShapelessRecipe(oakPlanksKey, oakPlanksItem);
 		
-		oakPlanksRecipe.shape(" S ", " S ");
+		oakPlanksRecipe.addIngredient(2, Material.OAK_SLAB);
 		
-		oakPlanksRecipe.setIngredient('S', Material.OAK_SLAB);
+		// Spruce Planks
 		
-		Bukkit.addRecipe(oakPlanksRecipe);
+		ItemStack sprucePlanksItem = new ItemStack(Material.SPRUCE_PLANKS);
+		
+		NamespacedKey sprucePlanksKey = new NamespacedKey(this, "SPRUCE_PLANKS");
+		
+		ShapelessRecipe sprucePlanksRecipe = new ShapelessRecipe(sprucePlanksKey, sprucePlanksItem);
+		
+		sprucePlanksRecipe.addIngredient(2, Material.SPRUCE_SLAB);
+		
+		// Birch Planks
+		
+		ItemStack birchPlanksItem = new ItemStack(Material.BIRCH_PLANKS);
+		
+		NamespacedKey birchPlanksKey = new NamespacedKey(this, "BIRCH_PLANKS");
+		
+		ShapelessRecipe birchPlanksRecipe = new ShapelessRecipe(birchPlanksKey, birchPlanksItem);
+		
+		birchPlanksRecipe.addIngredient(2, Material.BIRCH_SLAB);
+		
+		// Jungle Planks
+		
+		ItemStack junglePlanksItem = new ItemStack(Material.JUNGLE_PLANKS);
+		
+		NamespacedKey junglePlanksKey = new NamespacedKey(this, "JUNGLE_PLANKS");
+		
+		ShapelessRecipe junglePlanksRecipe = new ShapelessRecipe(junglePlanksKey, junglePlanksItem);
+		
+		junglePlanksRecipe.addIngredient(2, Material.JUNGLE_SLAB);
 		
 		// Acacia Planks
-		ItemStack acaciaPlanksItem = new ItemStack(Material.ACACIA_PLANKS);
 		
-		ItemMeta acaciaPlanksMeta = acaciaPlanksItem.getItemMeta();
+		ItemStack acaciaPlanksItem = new ItemStack(Material.ACACIA_PLANKS);
 		
 		NamespacedKey acaciaPlanksKey = new NamespacedKey(this, "ACACIA_PLANKS");
 		
-		ShapedRecipe acaciaPlanksRecipe = new ShapedRecipe(acaciaPlanksKey, acaciaPlanksItem);
+		ShapelessRecipe acaciaPlanksRecipe = new ShapelessRecipe(acaciaPlanksKey, acaciaPlanksItem);
 		
-		acaciaPlanksRecipe.shape(" S ", " S ");
+		acaciaPlanksRecipe.addIngredient(2, Material.ACACIA_SLAB);
 		
-		acaciaPlanksRecipe.setIngredient('S', Material.ACACIA_SLAB);
+		// Dark Oak Planks
 		
+		ItemStack darkOakPlanksItem = new ItemStack(Material.DARK_OAK_PLANKS);
+		
+		NamespacedKey darkOakPlanksKey = new NamespacedKey(this, "DARK_OAK_PLANKS");
+		
+		ShapelessRecipe darkOakPlanksRecipe = new ShapelessRecipe(darkOakPlanksKey, darkOakPlanksItem);
+		
+		darkOakPlanksRecipe.addIngredient(2, Material.DARK_OAK_SLAB);
+		
+		// Add Recipes
+		Bukkit.addRecipe(oakPlanksRecipe);
+		Bukkit.addRecipe(sprucePlanksRecipe);
+		Bukkit.addRecipe(birchPlanksRecipe);
+		Bukkit.addRecipe(junglePlanksRecipe);
 		Bukkit.addRecipe(acaciaPlanksRecipe);
+		Bukkit.addRecipe(darkOakPlanksRecipe);
 	}
 	
 	@Override
