@@ -1,0 +1,9 @@
+# bash
+*.sh
+
+# eclipse
+/.classpath
+/.project
+/.settings
+/.externalToolBuilders/
+/.settings/
