@@ -305,7 +305,7 @@ public class SlabToBlocks extends JavaPlugin {
 			
 			ItemStack endStoneBricksItem = new ItemStack(Material.END_STONE_BRICKS);
 			
-			NamespacedKey endStoneBricksItemKey = new NamespacedKey(this, "END_STONE_BRICKS");
+			NamespacedKey endStoneBricksKey = new NamespacedKey(this, "END_STONE_BRICKS");
 			
 			ShapelessRecipe endStoneBricksRecipe = new ShapelessRecipe(endStoneBricksKey, endStoneBricksItem);
 			
