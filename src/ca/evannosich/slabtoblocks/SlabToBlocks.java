@@ -301,10 +301,16 @@ public class SlabToBlocks extends JavaPlugin {
 			
 		// End Materials
 			
-			// End Stone Brick
+			// End Stone Bricks
 			
+			ItemStack endStoneBricksItem = new ItemStack(Material.END_STONE_BRICKS);
 			
-		
+			NamespacedKey endStoneBricksItemKey = new NamespacedKey(this, "END_STONE_BRICKS");
+			
+			ShapelessRecipe endStoneBricksRecipe = new ShapelessRecipe(endStoneBricksKey, endStoneBricksItem);
+			
+			endStoneBricksRecipe.addIngredient(2, Material.END_STONE_BRICK_SLAB);
+			
 		// Add Recipes
 		Bukkit.addRecipe(oakPlanksRecipe);
 		Bukkit.addRecipe(sprucePlanksRecipe);
