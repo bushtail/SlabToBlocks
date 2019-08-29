@@ -239,9 +239,33 @@ public class SlabToBlocks extends JavaPlugin {
 			
 			// Prismarine
 			
-			// Prismarine Brick
+			ItemStack prismarineItem = new ItemStack(Material.PRISMARINE);
+			
+			NamespacedKey prismarineKey = new NamespacedKey(this, "PRISMARINE");
+			
+			ShapelessRecipe prismarineRecipe = new ShapelessRecipe(prismarineKey, prismarineItem);
+			
+			prismarineRecipe.addIngredient(2, Material.PRISMARINE_SLAB);
+			
+			// Prismarine Bricks
+			
+			ItemStack prismarineBricksItem = new ItemStack(Material.PRISMARINE_BRICKS);
+			
+			NamespacedKey prismarineBricksKey = new NamespacedKey(this, "PRISMARINE_BRICKS");
+			
+			ShapelessRecipe prismarineBricksRecipe = new ShapelessRecipe(prismarineBricksKey, prismarineBricksItem);
+			
+			prismarineBricksRecipe.addIngredient(2, Material.PRISMARINE_BRICK_SLAB);
 			
 			// Dark Prismarine
+			
+			ItemStack darkPrismarineItem = new ItemStack(Material.DARK_PRISMARINE);
+			
+			NamespacedKey darkPrismarineKey = new NamespacedKey(this, "DARK_PRISMARINE");
+			
+			ShapelessRecipe darkPrismarineRecipe = new ShapelessRecipe(darkPrismarineKey, darkPrismarineItem);
+			
+			darkPrismarineRecipe.addIngredient(2, Material.DARK_PRISMARINE_SLAB);
 			
 		// Nether Materials
 			
