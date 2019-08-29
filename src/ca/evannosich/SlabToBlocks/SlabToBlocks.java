@@ -1,4 +1,4 @@
-package ca.evannosich.slabtoblocks;
+package ca.evannosich.SlabToBlocks;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
