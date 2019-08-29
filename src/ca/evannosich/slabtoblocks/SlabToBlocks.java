@@ -271,13 +271,39 @@ public class SlabToBlocks extends JavaPlugin {
 			
 			// Nether Brick
 			
-			// Red Nether Brick
+			ItemStack netherBrickItem = new ItemStack(Material.NETHER_BRICK);
+			
+			NamespacedKey netherBrickKey = new NamespacedKey(this, "NETHER_BRICK");
+			
+			ShapelessRecipe netherBrickRecipe = new ShapelessRecipe(netherBrickKey, netherBrickItem);
+			
+			netherBrickRecipe.addIngredient(2, Material.NETHER_BRICK_SLAB);
+			
+			// Red Nether Bricks
+			
+			ItemStack redNetherBricksItem = new ItemStack(Material.RED_NETHER_BRICKS);
+			
+			NamespacedKey redNetherBricksKey = new NamespacedKey(this, "RED_NETHER_BRICKS");
+			
+			ShapelessRecipe redNetherBricksRecipe = new ShapelessRecipe(redNetherBricksKey, redNetherBricksItem);
+			
+			redNetherBricksRecipe.addIngredient(2, Material.RED_NETHER_BRICK_SLAB);
 			
 			// Smooth Quartz
+			
+			ItemStack smoothQuartzItem = new ItemStack(Material.SMOOTH_QUARTZ);
+			
+			NamespacedKey smoothQuartzKey = new NamespacedKey(this, "SMOOTH_QUARTZ");
+			
+			ShapelessRecipe smoothQuartzRecipe = new ShapelessRecipe(smoothQuartzKey, smoothQuartzItem);
+			
+			smoothQuartzRecipe.addIngredient(2, Material.SMOOTH_QUARTZ_SLAB);
 			
 		// End Materials
 			
 			// End Stone Brick
+			
+			
 		
 		// Add Recipes
 		Bukkit.addRecipe(oakPlanksRecipe);
@@ -299,6 +325,14 @@ public class SlabToBlocks extends JavaPlugin {
 		Bukkit.addRecipe(mossyStoneBricksRecipe);
 		Bukkit.addRecipe(smoothSandstoneRecipe);
 		Bukkit.addRecipe(smoothRedSandstoneRecipe);
+		Bukkit.addRecipe(cutSandstoneRecipe);
+		Bukkit.addRecipe(cutRedSandstoneRecipe);
+		Bukkit.addRecipe(prismarineRecipe);
+		Bukkit.addRecipe(prismarineBricksRecipe);
+		Bukkit.addRecipe(darkPrismarineRecipe);
+		Bukkit.addRecipe(netherBrickRecipe);
+		Bukkit.addRecipe(redNetherBricksRecipe);
+		Bukkit.addRecipe(smoothQuartzRecipe);
 	}
 	
 	@Override
