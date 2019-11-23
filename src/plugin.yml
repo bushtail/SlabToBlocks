@@ -1,6 +1,0 @@
-main: ca.evannosich.SlabToBlocks.SlabToBlocks
-name: SlabToBlocks
-api-version: 1.13
-version: 1.1
-author: Evan Nosich (ComradeBushtail)
-description: A plugin that allows players to combine 2 slabs in a crafting table to create a full block.

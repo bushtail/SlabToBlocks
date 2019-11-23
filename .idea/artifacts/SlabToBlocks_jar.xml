@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="SlabToBlocks:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SlabToBlocks_jar</output-path>
-    <root id="archive" name="SlabToBlocks.jar">
-      <element id="module-output" name="SlabToBlocks" />
-      <element id="extracted-dir" path="S:/Spigot/Spigot-API/target/spigot-api-1.14.4-R0.1-SNAPSHOT-shaded.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
