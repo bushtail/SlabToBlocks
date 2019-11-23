@@ -2,10 +2,5 @@
 # bash
 *.sh
 
-# eclipse
-/.classpath
-/.project
-/.settings
-/.externalToolBuilders
-/target
-/bin
+# intellij
+/.idea
